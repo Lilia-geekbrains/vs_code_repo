@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/861689887d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header padding-site">
+            <div class="logo">Bran<span>d</span></div>
+
+            <form method="get" class="search">
+                <button class="search__browse" name="Browse" id="">Browse <i class="fas fa-caret-down"></i></button>
+                <input type="text" name="search" placeholder="Search for Item...">
+                <button><i class="fas fa-search"></i></button>
+            </form>
+
+            <img src="img/cart.png" alt="cart" class="header__cart">
+            <button name="accountBar" class="header__account-bar">My Account <i class="fas fa-caret-down"></i></button>
+        </header>
+
+        <div class="headerLine"></div>
+
+        <nav class="topNav">
+            <a href="#">Home</a>
+            <a href="#">Man</a>
+            <a href="#">Women</a>
+            <a href="#">Kids</a>
+            <a href="#">Accoseriese</a>
+            <a href="#">Featured</a>
+            <a href="#">Hot Deals </a>
+        </nav>
+        <main>
+            <section class="New-Arrivals padding-site">
+                <h1 class="new-arr">NEW ARRIVALS</h1>
+                <nav class="arrivalsBreadCrumbs">
+                    <h3><a href="#">Home</a> / <a href="#">Men</a> / <a href="#" class="menu-active-link">New Arrivals</a></h3>
+                </nav>
+            </section>    
+                <article class="shopping-cart padding-site">
+                    <div class="head-cart">
+                        <h3 class="first-col">Product Details</h3>
+                        <h3>unite Price</h3>
+                        <h3>Quantity</h3>
+                        <h3>shipping</h3>
+                        <h3>Subtotal</h3>
+                        <h3>ACTION</h3>
+                    </div>
+                    <div class="cart-firstPosition cartPositions">
+                        <div class="photo-size photoFirst">
+                            <h1>Mango People T-shirt</h1>
+                            <h3>Color: <span>Red</span></h3>
+                            <h3>Size: <span>Xll</span></h3>
+                        </div>
+                        <span class="cart-price">&#36;150</span>
+                        <input class="quantity" type="text" placeholder="2"></input>
+                        <span class="ship">Free</span>
+                        <span class="total">&#36;300</span>
+                        <a href="#"><img src="img/delete.png" alt="delete" class="delete-icon"></a>
+                    </div>
+                    <div class="cartSecondPosition cartPositions">
+                        <div class="photo-size photoSecond">
+                            <h1>Mango People T-shirt</h1>
+                            <h3>Color: <span>Red</span></h3>
+                            <h3>Size: <span>Xll</span></h3>
+                        </div>
+                        <span class="cart-price">&#36;150</span>
+                        <input class="quantity" type="text" placeholder="2"></input>
+                        <span class="ship">Free</span>
+                        <span class="total">&#36;300</span>
+                        <a href="#"><img src="img/delete.png" alt="delete" class="delete-icon"></a>
+                    </div>
+                     <div class="cartThirdPosition cartPositions">
+                        <div class="photo-size photoThird">
+                            <h1>Mango People T-shirt</h1>
+                            <h3>Color: <span>Red</span></h3>
+                            <h3>Size: <span>Xll</span></h3>
+                        </div>
+                        <span class="cart-price">&#36;150</span>
+                        <input class="quantity" type="text" placeholder="2"></input>
+                        <span class="ship">Free</span>
+                        <span class="total">&#36;300</span>
+                        <a href="#"><img src="img/delete.png" alt="delete" class="delete-icon"></a>
+                    </div>
+                    <div class="cart-buttons">
+                        <button>CLEAR SHOPPING CART</button>
+                        <button>CONTINUE sHOPPING</button>
+                    </div>
+            </article>
+            <article class="payment padding-site">
+                <div class="shipping-adress">
+                    <h1>Shipping Adress</h1>
+                   <select list="cities">
+                        <option>Bangladesh</option>
+                        <option>Moscow</option>    
+                        <option>London</option>
+                        <option>Delhi</option>
+                    </select>
+                    <input type="text" placeholder="State">
+                    <input type="number" name="postcode" id="" placeholder="Postcode / Zip">        
+                </div>
+               <div class="coupon">
+                    <h1>coupon  discount</h1>
+                    <h3>Enter your coupon code if you have one</h3>
+                    <input type="text" placeholder="Coupon code">
+                    <button>Apply Coupon</button>
+
+                </div>
+                <div class="grand-total">
+                    <h6>Sub total  <span>$900</span></h6>
+                    <h1>GRAND TOTAL <span>$900</span></h1>
+                    <div></div>
+                    <button>proceed to checkout</button>
+                </div>
+
+            </article>
+            <section class="subscribe">
+                <div class="photo-area">
+                    <div class="photo-area-text"><em>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, 
+            a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</em></div>
+                    <div class="subscribe-name">
+                        <h3>Bin Burhan</h3>
+                        <h6>Dhaka, Bd</h6>
+                    </div>
+                    <div class="pagination">
+                        <a href="#"><div class="pagination-link"></div></a>
+                        <a href="#"><div class="pagination-link pag-active-link"></div></a>
+                        <a href="#"><div class="pagination-link"></div></a>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="subscribe-area">
+                    <h3>Subscribe</h3>
+                    <h6>For our newletter and promotion</h6>
+                    <div class="email"><input type="email" placeholder="Enter Your Email"><button>Subscribe</button></div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer padding-site">
+            <div class="footer-text">
+                <h1>BRAN<span>D</span></h1>
+                <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.</p> 
+
+                <p>Efficiently plagiarize 24/365 action items and focused infomediaries.
+                Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
+
+                <p>Objectively strategize seamless relationships via resource sucking testing procedures. Proactively cultivate next-generation results for value-added methodologies. Dynamically plagiarize unique methodologies after performance based methodologies. Monotonectally empower stand-alone mindshare rather than ubiquitous opportunities. Dynamically orchestrate resource sucking scenarios after alternative synergy.</p>
+
+                <p>Compellingly envisioneer corporate methods of empowerment before standards compliant technologies. Objectively facilitate progressive.</p>
+            </div>
+            <div class="footer-company">
+                <h3>COMPANY</h3>
+                <ul>
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>Shop</li></a>
+                    <a href="#"><li>About</li></a>
+                    <a href="#"><li>How It Works</li></a>
+                    <a href="#"><li>Contact</li></a>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <h3>INFORMATION</h3>
+                <ul>
+                    <a href="#"><li>Tearms &amp; Condition</li></a>
+                    <a href="#"><li>Privacy Policy</li></a>
+                    <a href="#"><li>How to Buy</li></a>
+                    <a href="#"><li>How to Sell</li></a>
+                    <a href="#"><li>Promotion</li></a>
+                </ul>
+            </div>
+            <div class="footer-shop">
+                <h3>SHOP CATEGORY</h3>
+                <ul>
+                    <a href="#"><li>Men</li></a>
+                    <a href="#"><li>Women</li></a>
+                    <a href="#"><li>Child</li></a>
+                    <a href="#"><li>Apparel</li></a>
+                    <a href="#"><li>Brows All</li></a>
+                </ul>
+            </div>
+        </footer>
+<footer class="footer-copyright padding-site">
+    <div class="copy">&copy; 2017 Brand All Rights Reserved.</div>
+    <div class="social-icons">
+        <a href="#"><div class="facebook"></div></a>
+        <a href="#"><div class="twitter"></div></a>
+        <a href="#"><div class="in"></div></a>
+        <a href="#"><div class="pinterest"></div></a>
+        <a href="#"><div class="google"></div></a>
+    </div>
+</footer>
+</body>        
