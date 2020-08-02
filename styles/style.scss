@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import "_checkout.scss";
 
 body {
     margin: 0;
@@ -88,6 +89,11 @@ body {
 .header__cart {
     margin-left: auto;
     margin-right: 26px;
+    transition-duration: 0.3s;
+}
+
+.header__cart:hover {
+    transform: scale(1.2, 1.2);
 }
 
 .header__account-bar {
@@ -100,7 +106,13 @@ body {
     color: #ffffff;
     font-size: 15px;
     font-weight: 400;
+    transition-duration: .3s;
 }
+
+.header__account-bar:hover {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+}
+
 
 .headerLine {
     border-bottom: 1px solid #ececec;
@@ -121,6 +133,7 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     color: #222222;
+    transition-duration: .3s;
 }
 
 .topNav a:not(:last-child) {
@@ -128,7 +141,7 @@ body {
 }
 
 .topNav a:hover {
-    border-bottom: 2px solid black;
+    color: #f16d7f;
 }
 
 .topBanner {
@@ -193,6 +206,11 @@ body {
     align-content: space-between;
     justify-content: space-between;
     margin-top: 98px;
+   
+}
+
+.offer a {
+    transition-duration: .3s;
 }
 
 .offer a:hover {
@@ -328,6 +346,7 @@ body {
     display: flex;
     flex-direction: column;
     margin-bottom: 39px;
+    transition-duration: .3s;
 }
 
 
@@ -392,6 +411,7 @@ body {
     text-align: center;
     outline: none;
     border: none;
+    transition-duration: .3s;
 }
 
 .browsebutton img {
@@ -583,6 +603,7 @@ body {
 
 .pag-active-link {
     background-color: #f16d7f;
+    transition-duration: .3s;
 }
 
 .pagination-link:hover {
@@ -659,6 +680,7 @@ body {
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 0.35px;
+    transition-duration: .3s;
 }
 
 .email button:hover {
@@ -755,6 +777,7 @@ body {
     letter-spacing: 0.4px;
     letter-spacing: 0.4px;
     line-height: 42px;
+    transition-duration: .3s;
 }
 
 .footer ul li:hover {
@@ -787,6 +810,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
      border-radius: 2px;
+     transition-duration: .3s;
 }
 
 .twitter {
@@ -796,6 +820,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 2px;
+    transition-duration: .3s;
 }
 
 .in {
@@ -805,6 +830,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
      border-radius: 2px;
+     transition-duration: .3s;
 }
 
 .pinterest {
@@ -814,6 +840,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
      border-radius: 2px;
+     transition-duration: .3s;
 }
 
 .google {
@@ -823,6 +850,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
      border-radius: 2px;
+     transition-duration: .3s;
 }
 
 .facebook:hover, .twitter:hover, .in:hover, .pinterest:hover, .google:hover {
@@ -864,6 +892,7 @@ body {
     font-family: Lato;
     font-weight: 300;
     text-decoration: none;
+    transition-duration: .3s;
 }
 
  .arrivalsBreadCrumbs .menu-active-link {
@@ -982,6 +1011,7 @@ body {
     font-weight: 400;
     outline: none;
     text-align: center;
+    transition-duration: .3s;
 }
 
 .quantity:focus::-webkit-input-placeholder {
@@ -1008,6 +1038,7 @@ body {
     width: 15px;
     height: 15px;
     margin-right: 20px;
+    transition-duration: .3s;
 }
 
 .delete-icon:hover {
@@ -1038,6 +1069,7 @@ body {
         font-size: 14px;
         font-weight: 700;
         text-transform: uppercase;
+        transition-duration: .3s;
         &:hover {
             box-shadow: 1px 1px 2px 1px #9f9f9f; 
         }
@@ -1072,6 +1104,7 @@ body {
         background-image: url(../img/arrowbottom.png);
         background-repeat: no-repeat;
         background-position: 95% 50%;
+        transition-duration: .3s;
         &:focus {
             color: #222222;
             font-family: Lato;
@@ -1087,6 +1120,7 @@ body {
         border: 1px solid #eaeaea;
         background-color: #ffffff;
         padding-left: 20px;
+        transition-duration: .3s;
         &::placeholder {
             color: #b1b1b1;
             font-family: Lato;
@@ -1148,6 +1182,7 @@ body {
         font-weight: 700;
         text-transform: uppercase;
         margin-top: 25px;
+        transition-duration: .3s;
         &:hover {
             box-shadow: 1px 1px 2px 1px #9f9f9f; 
         }
@@ -1210,8 +1245,22 @@ body {
         font-size: 16px;
         font-weight: 700;
         text-transform: uppercase;
+        transition-duration: .3s;
         &:hover {  box-shadow: 1px 1px 2px 1px #9f9f9f; 
 
         }
     }
+}
+
+.checkOut {
+    height: 1022px;
+    display: flex;
+    flex-direction: column;
+}
+
+.shippingAdd {
+    width: 974px;
+    height: 394px;
+    display: flex;
+    justify-content: space-between;
 }
