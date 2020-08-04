@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/style.css">
     <script src="https://kit.fontawesome.com/861689887d.js" crossorigin="anonymous"></script>
-    <title>Check Out</title>
+    <title>Single Page</title>
 </head>
 <body>
     <div class="container">
@@ -53,33 +53,41 @@
                     <h2>$561</h2>
                     <div class="boxLine"></div>
                     <div class="checkingDetails">
-                        <select list="color">
-                            <option><img src="img/pinkcolor.png" alt="pink"> Red </option>
-                            <option>Green</option>    
-                            <option>Blue</option>
-                            <option>White</option>
-                        </select>
-                        <select list="size">
-                            <option>XXL</option>
-                            <option>XL</option>    
-                            <option>M</option>
-                            <option>S</option>
-                        </select>
-                        <input type="text" placeholder="2">
+                        <div class="chooseColor">
+                            <h3>Choose Color</h3>
+                            <select list="color">
+                                <option><img src="img/pinkcolor.png" alt="pink"> Red </option>
+                                <option>Green</option>    
+                                <option>Blue</option>
+                                <option>White</option>
+                            </select>
+                        </div>
+                        <div class="chooseSize">
+                            <h3>Choose Size</h3>
+                            <select list="size">
+                                <option>XXL</option>
+                                <option>XL</option>    
+                                <option>M</option>
+                                <option>S</option>
+                            </select>
+                         </div>
+                         <div class="chooseQuant">
+                             <h3>Quantity</h3>
+                           <input type="text" placeholder="2">
+                        </div>
                     </div>
                     <button><img src="img/pinkcart.png" alt="pinkcart"> Add To Cart</button>
                 </div>
 
            
-           <div class="mayalsoLike">
+           <div class="mayalsoLike padding-site">
                <h1 class="youMay">you may like also</h1>
-               <div class="blacksuit">
-                   <img src="img/blacksuit.png" alt="blacksuit">
+               <div class="youMayLikeStuff">
+               <div class="blacksuit"><img src="img/blacksuit.png" alt="blacksuit">
                    <h4>Blaze Leggings</h4>
                    <h5>$52.00</h5>
                </div>
-               <div class="longShirt">
-                   <img src="img/longhsirt.png" alt="skirt">
+               <div class="longShirt"><img src="img/longhsirt.png" alt="skirt">
                    <h4>Alexa sweater</h4>
                    <h5>$52.00</h5>
                </div>
@@ -93,6 +101,7 @@
                    <h4>yslva sweater</h4>
                    <h5>$52.00</h5>
                </div>
+                </div>
            </div>
         </main>
 
