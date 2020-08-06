@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/style.css">
     <script src="https://kit.fontawesome.com/861689887d.js" crossorigin="anonymous"></script>
-    <title>Check Out</title>
+    <title>Single Page</title>
 </head>
 <body>
     <div class="container">
@@ -62,59 +62,57 @@
             <a href="#">Accoseriese</a>
             <a href="#">Featured</a>
             <a href="#">Hot Deals </a>
-        </nav>  
-        <main>
-            <section class="New-Arrivals padding-site">
-                <h1 class="new-arr">NEW ARRIVALS</h1>
-                <nav class="arrivalsBreadCrumbs">
-                    <h3><a href="#">Home</a> / <a href="#">Men</a> / <a href="#" class="menu-active-link">New Arrivals</a></h3>
-                </nav>
-            </section> 
-            <article class="checkOut padding-site">
-                <div class="shipAdd">
-                    <input class="invisibleRadio" type="radio" name="checkinglist" id="labelarea01">
-                    <label for="labelarea01">01. Shipping Adress</label>
-                    
-                    <div class="shippingAdd-content"> 
-                        <div class="asGuestOrRegister">
-                            <h1>Check as a guest or register</h1>
-                            <p>Register with us for future convenience</p>
-                            <br>
-                            <span><input type="radio" name="register">checkout as guest</span><br>
-                            <span><input type="radio" name="register" checked>register</span>
-                            <br><br>
-                            <h1>register and save time!</h1>
-                            <p>Register with us for future convenience</p>
-                            <ul>
-                                <li>Fast and easy checkout</li>
-                                <li>Easy access to your order history and status</li>
-                            </ul>
-                            
-                           
-                            <button>Continue</button>
+        </nav>
+        <section class="New-Arrivals padding-site">
+            <h1 class="new-arr">NEW ARRIVALS</h1>
+            <nav class="arrivalsBreadCrumbs">
+                <h3><a href="#">Home</a> / <a href="#">Men</a> / <a href="#" class="menu-active-link">New Arrivals</a></h3>
+            </nav>
+        </section>
 
-                        </div>
-                        <div class="registred">
-                            <h1>Already registed?</h1>
-                            <p>Please log in below</p>
-                            <h3>EMAIL ADDRESS<span>*</span></h3>
-                            <input type="text" class="email">
-                            <h3>PASSWORD<span>*</span></h3>
-                            <input type="password">
-                            <h6>* Required Fileds</h6>
-                            <button>Log in</button> <a>Forgot Password ?</a>
-                        </div>
-                    </div>
+        <main>
+            <aside>
+               <input type="checkbox" id="asideCategory">
+               <label for="asideCategory">Category</label> 
+                <ul>
+                    <li>Accessories</li>
+                    <li>Bags</li>
+                    <li>Denim</li>
+                    <li>Hoodies & Sweatshirts</li>
+                    <li>Jackets & Coats</li>
+                    <li>Pants</li>
+                    <li>Polos</li>
+                    <li>Shirts</li>
+                    <li>Shoes</li>
+                    <li>Shorts</li>
+                    <li>Sweaters & Knits</li>
+                    <li>T-Shirts </li>
+                    <li>Tanks</li>
+                </ul>
+                <input type="checkbox" id="asideBrand">
+               <label for="asideBrand">Brand</label> 
+               <input type="checkbox" id="asideDesigner">
+               <label for="asideDesigner">Designer</label> 
+            </aside>
+            <div class="settings">
+                <div class="style">
+                    <h1>Trending Now</h1>
+                </div>
+                <div class="size">
+                    <input type="checkbox">S</input>
+                    <input type="checkbox">M</input>
+                    <input type="checkbox">L</input>
+                    <input type="checkbox">XL</input>
+                    <input type="checkbox">XXL</input>
+                    <input type="checkbox">XXXL</input>
+                </div>
+                <div class="price">
+                  <h1>Price</h1>
+                  <img src="" alt="">  
+                </div>
+
             </div>
-            <div class="checkOutList">    
-                <div>02. BILLING INFORMATION</div>
-                <div>03. SHIPPING INFORMATION</div>
-                <div>04. SHIPPING METHOD</div>
-                <div>05. PAYMENT METHOD</div>
-                <div>06. ORDER REVIEW</div>
-            </div>    
-            </article>
-        </main>    
+        </main>
         <section class="subscribe">
             <div class="photo-area">
                 <div class="photo-area-text"><em>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, 
