@@ -10,11 +10,43 @@
     <div class="container">
         <header class="header padding-site">
             <a href="#" class="logo"><img src="img/logo.png">Bran<span>d</span></a>
-            <form method="get" class="search">
-                <button class="search__browse" name="Browse" id="">Browse <i class="fas fa-caret-down"></i></button>
-                <input type="text" name="search" placeholder="Search for Item...">
-                <button><i class="fas fa-search"></i></button>
-            </form>
+            <input class="collapse" type="checkbox" id="dropdown">
+            <label class="search__browse" for="dropdown">Browse <i class="fas fa-caret-down"></i></label>
+            <div class="BrowsedropDownmenu">
+                <div class="dropDown">
+                    <h1>Women</h1>
+                    <div class="dropline"></div>
+                    <a href="#">Dresses</a><br>
+                    <a href="#">Tops</a><br>
+                    <a href="#">Sweaters/Knits</a><br>
+                    <a href="#">Jackets/Coats</a><br>
+                    <a href="#">Blazers</a><br>
+                    <a href="#">Denim</a><br>
+                    <a href="#">Leggings/Pants</a><br>
+                    <a href="#">Skirts/Shorts</a><br>
+                    <a href="#">Accessories </a><br>
+                    <a href="#">Bags/Purses</a><br>
+                    <a href="#">Swimwear/Underwear</a><br>
+                    <a href="#">Nightwear</a><br>
+                    <a href="#">Shoes</a><br>
+                    <a href="#">Beauty</a><br>
+                    <h1>Men</h1>
+                    <div class="dropline"></div>
+                    <a href="#"> Tees/Tank tops</a><br>
+                    <a href="#"> Shirts/Polos</a><br>
+                    <a href="#"> Sweaters</a><br>
+                    <a href="#"> Sweatshirts/Hoodies</a><br>
+                    <a href="#"> Blazers</a><br>
+                    <a href="#"> Jackets/vests</a>
+        
+                </div>
+            </div>
+    
+        <form method="get" class="search">
+        <input type="text" name="search" placeholder="Search for Item...">
+        <button class="lupaButton"><i class="fas fa-search"></i></button>   
+        
+    </form>
 
             <img src="img/cart.png" alt="cart" class="header__cart">
             <button name="accountBar" class="header__account-bar">My Account <i class="fas fa-caret-down"></i></button>

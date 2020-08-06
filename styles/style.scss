@@ -24,6 +24,7 @@ body {
     height: 100px;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .logo {
@@ -63,27 +64,94 @@ a .logo {
 }
 
 .search {
-    height: 38px;
+    height: 37px;
     display: flex;
     align-items: center;
-    border-radius: 3px;
+    border-radius: 0 3px 3px 0;
     border: 1px solid #e6e6e6;
     overflow: hidden;
     font-size: 14px;
+    
+}
+
+
+.collapse {
+    display: none;
+    background-color: #f9f9f9 ;   
 }
 
 .search__browse {
-    padding: 14px;
+    padding-left: 10px;
     background-color: #f9f9f9;
     line-height: 38px;
     border: none;
     color: #7c7c7c;
     outline: none;
+    border-top: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    border-radius: 3px 0 0 3px;
+    transition-duration: .3s;
+    &:hover {
+        cursor: pointer;
+        background-color: #e7e7e7;
+    }
 
+}
+
+.BrowsedropDownmenu {
+    position: absolute;
+    height: 530px;
+    width: 262px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 1px solid #eeeeee ;
+    top: 69px;
+    left: 425px;
+    display: none;
+    overflow: scroll;
+    h1 {
+        color: #232323;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 32px;
+        text-transform: uppercase;
+        letter-spacing: 0.35px;
+        margin: 0;
+        margin-left: 15px;
+        margin-top: 10px;
+
+        
+    }
+    .dropline {
+        width: 236px;
+        height: 1px;
+        background-color: #e8e8e8;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    a {
+        color: #4f4f4f;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.35px;
+        text-decoration: none;
+        line-height: 21px;
+        margin-left: 20px;
+    }
+
+}
+
+.collapse:checked + label + .BrowsedropDownmenu {
+    display: flex;
+    z-index: 1;
 }
 
 .search__browse i {
     color: #838383;
+    padding-right: 15px;
 }
 
 .header .search input {
@@ -92,19 +160,22 @@ a .logo {
     outline: none;
     overflow: hidden;
     padding: 14px 16px;
-    border-left: 1px solid #e6e6e6;
     border-right: 1px solid #e6e6e6;
 }
 
 
 
-.header .search button:last-child {
+.header .search button {
     border: none;
     outline: none;
     height: inherit;
     background: none;
     padding: 12px;
     color: #a4a4a4;
+    transition-duration: .3s;
+    &:hover {
+        background-color: #e2e1e1;
+    }
 }
 
 .header__cart {
@@ -355,21 +426,44 @@ a .logo {
 .featured-stuff {
     display: flex;
     flex-wrap: wrap;
-    width: auto;
-    justify-content: space-around;
-    
+    justify-content: space-between;
     
 }
 
 .t-short {
-    width: auto;
-    height: 364px;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 39px;
+    width: 264px;
+    height: 370px;
     transition-duration: .3s;
+    .t-shortImg {
+        height: 280px;
+        position: relative;
+        margin-bottom: 16px;
+    }
+    &:nth-child(n+5) {
+        margin-top: 27px;
+    }
 }
 
+.invisibleBlock {
+    height: inherit;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    position: absolute;
+    button {
+        width: 123px;
+        height: 39px;
+        border: 1px solid #ffffff; 
+        color: #ffffff;
+        font-family: Lato;
+        font-size: 13px;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.16);
+    }
+}
 
 .t-short:hover {
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
@@ -378,15 +472,26 @@ a .logo {
 
 }
 
-.t-short a img {
-    margin-bottom: 16px;
-    width: auto;
+.t-short:hover .invisibleBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.invisiblestars {
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    margin-top: 10px;
+    img {
+        visibility: hidden;
+    }
+}
 
-.t-short a {
-    color: #222222;
-    text-decoration: none;
+.t-short:hover .invisiblestars img {
+    visibility: visible;
 }
 
 
@@ -396,8 +501,7 @@ a .logo {
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
-    margin-top: 10px;
-    margin-left: 16px;
+    margin: 0;
 }
 
 .mango {
@@ -420,6 +524,7 @@ a .logo {
 }
 
 .browsebutton {
+    margin-top: 60px;
     width: 212px;
     height: 48px;
     background-color: #f16d7f;
@@ -1275,49 +1380,69 @@ a .logo {
 }
 
 .checkOut {
-    height: 1022px;
+    min-height: 1022px;
     display: flex;
     flex-direction: column;
 }
 
 .shipAdd {
-    margin-top: 89px;
+    margin-top: 80px;
+    
+    border-top: 1px solid #e8e8e8;
 }
+.shipAdd .invisibleRadio {
+        display: none;
+    }
+
+.shipAdd label {
+        width: 100%;
+        line-height: 72px;
+        color: #222222;
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
 
 .shippingAdd-content {
     width: 974px;
-    height: 394px;
+    max-height: 0px;
     display: flex;
     justify-content: space-between;
     margin-left: 35px;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
-.shipAdd h1 {
-    color: #222222;
-    font-family: Lato;
-    font-size: 16px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin: 0;
+.shipAdd input:checked +label + .shippingAdd-content {
+    max-height: 1000px;
+    
 }
+
 
 .asGuestOrRegister {
     width: auto;
-    height: 342px;
     h1 {
         color: #222222;
         font-family: Lato;
         font-size: 13px;
         font-weight: 700;
         text-transform: uppercase;
-        margin-top: 33px;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 10px;
     }
-    h3 {
+
+    span {
         color: #222222;
         font-family: Lato;
         font-size: 12px;
         font-weight: 700;
         text-transform: uppercase;
+        margin-top: 15px;
+        margin-bottom: 15px;
     
         input[type='radio'] {
         position: relative;
@@ -1367,7 +1492,7 @@ a .logo {
         font-weight: 400;
         line-height: 20px;
         margin: 0;
-        margin-top: 10px;
+        margin-top: 15px;
     }
     ul {
         padding: 0;
@@ -1403,7 +1528,6 @@ a .logo {
 
 .registred {
     width: 391px;
-    height: 342px;
     h1 {
         color: #222222;
         font-family: Lato;
@@ -1419,7 +1543,6 @@ a .logo {
         font-weight: 400;
         line-height: 20px;
         margin: 0;
-        margin-top: 10px;
     }
     h3 {
         color: #222222;
@@ -1429,7 +1552,7 @@ a .logo {
         line-height: 20px;
         text-transform: uppercase;
         margin: 0;
-        margin-top: 25px;
+        margin-top: 15px;
     }
     span {
         color: #ff0d0d;
@@ -1456,7 +1579,7 @@ a .logo {
         font-weight: 400;
         line-height: 20px;
         margin: 0;
-        margin-top: 15px;
+        margin-top: 10px;
     }
     button {
         width: 180px;
@@ -1470,6 +1593,7 @@ a .logo {
         text-transform: uppercase;
         margin-top: 22px;
         transition-duration: .3s;
+        margin-bottom: 20px;
         &:hover {
             box-shadow: 1px 1px 2px 1px #9f9f9f; 
             }
@@ -1499,7 +1623,6 @@ a .logo {
         font-weight: 700;
         line-height: 72px;
         text-transform: uppercase;
-        margin-top: 79px;
         margin-bottom: -97px;
         div {
             height: 74px;
