@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/style.css">
     <script src="https://kit.fontawesome.com/861689887d.js" crossorigin="anonymous"></script>
-    <title>Single Page</title>
+    <title>Product</title>
 </head>
 <body>
     <div class="container">
@@ -69,50 +69,204 @@
                 <h3><a href="#">Home</a> / <a href="#">Men</a> / <a href="#" class="menu-active-link">New Arrivals</a></h3>
             </nav>
         </section>
-
-        <main>
-            <aside>
-               <input type="checkbox" id="asideCategory">
-               <label for="asideCategory">Category</label> 
+            <main class="padding-site">
+            <nav class="leftNav">
+               <input type="checkbox" id="asideCategory" checked="checked">
+               <label class="activeLabel" for="asideCategory">Category</label> 
                 <ul>
-                    <li>Accessories</li>
-                    <li>Bags</li>
-                    <li>Denim</li>
-                    <li>Hoodies & Sweatshirts</li>
-                    <li>Jackets & Coats</li>
-                    <li>Pants</li>
-                    <li>Polos</li>
-                    <li>Shirts</li>
-                    <li>Shoes</li>
-                    <li>Shorts</li>
-                    <li>Sweaters & Knits</li>
-                    <li>T-Shirts </li>
-                    <li>Tanks</li>
+                    <li><a href="#"> Accessories</a></li>
+                    <li><a href="#"> Bags</a></li>
+                    <li><a href="#"> Denim</a></li>
+                    <li><a href="#"> Hoodies & Sweatshirts</a></li>
+                    <li><a href="#"> Jackets & Coats</a></li>
+                    <li><a href="#"> Pants</a></li>
+                    <li><a href="#"> Polos</a></li>
+                    <li><a href="#"> Shirts</a></li>
+                    <li><a href="#"> Shoes</a></li>
+                    <li><a href="#"> Shorts</a></li>
+                    <li><a href="#"> Sweaters & Knits</a></li>
+                    <li><a href="#"> T-Shirts </a></li>
+                    <li><a href="#"> Tanks</a></li>
                 </ul>
                 <input type="checkbox" id="asideBrand">
                <label for="asideBrand">Brand</label> 
+               <ul>
+                <li><a href="#"> Accessories</a></li>
+                <li><a href="#"> Bags</a></li>
+                <li><a href="#"> Denim</a></li>
+                <li><a href="#"> Hoodies & Sweatshirts</a></li>
+                <li><a href="#"> Jackets & Coats</a></li>
+                <li><a href="#"> Pants</a></li>
+                <li><a href="#"> Polos</a></li>
+                <li><a href="#"> Shirts</a></li>
+                <li><a href="#"> Shoes</a></li>
+                <li><a href="#"> Shorts</a></li>
+                <li><a href="#"> Sweaters & Knits</a></li>
+                <li><a href="#"> T-Shirts </a></li>
+                <li><a href="#"> Tanks</a></li>
+            </ul>
                <input type="checkbox" id="asideDesigner">
                <label for="asideDesigner">Designer</label> 
-            </aside>
-            <div class="settings">
-                <div class="style">
-                    <h1>Trending Now</h1>
+               <ul>
+                <li><a href="#"> Accessories</a></li>
+                <li><a href="#"> Bags</a></li>
+                <li><a href="#"> Denim</a></li>
+                <li><a href="#"> Hoodies & Sweatshirts</a></li>
+                <li><a href="#"> Jackets & Coats</a></li>
+                <li><a href="#"> Pants</a></li>
+                <li><a href="#"> Polos</a></li>
+                <li><a href="#"> Shirts</a></li>
+                <li><a href="#"> Shoes</a></li>
+                <li><a href="#"> Shorts</a></li>
+                <li><a href="#"> Sweaters & Knits</a></li>
+                <li><a href="#"> T-Shirts </a></li>
+                <li><a href="#"> Tanks</a></li>
+            </ul>
+            </nav>
+            <article class="productsMain">
+                <div class="settings">
+                    <div class="style">
+                        <h1>Trending Now</h1>
+                        <button>Bohemian</button><button>Floral</button><button>Lace</button><button>Lace</button><button>Floral</button><button>Boho</button>
+                    </div>
+                    <div class="size">
+                        <input type="checkbox">S</input>
+                        <input type="checkbox">M</input>
+                        <input type="checkbox">L</input>
+                        <input type="checkbox">XL</input>
+                        <input type="checkbox">XXL</input>
+                        <input type="checkbox">XXXL</input>
+                    </div>
+                    <div class="price">
+                    <h1>Price</h1>
+                    <img src="img/5-layers.png" alt="price">
+                    <div><span>$52</span><span>$400</span></div>
+                    </div>
                 </div>
-                <div class="size">
-                    <input type="checkbox">S</input>
-                    <input type="checkbox">M</input>
-                    <input type="checkbox">L</input>
-                    <input type="checkbox">XL</input>
-                    <input type="checkbox">XXL</input>
-                    <input type="checkbox">XXXL</input>
-                </div>
-                <div class="price">
-                  <h1>Price</h1>
-                  <img src="" alt="">  
+                <div class="sorterPanel">
+                    <div class="sorter">
+                        <div class="sortBy">
+                            <span>Sort By</span>
+                            <select list="sorting">
+                                <option>Name</option>
+                                <option>Price</option>
+                                <option>New</option>
+                                <option>Sale</option>
+                            </select>
+                        </div>
+                        <div class="shower">
+                            <span>Show</span>
+                            <select list="show">
+                                <option>09</option>
+                                <option>18</option>
+                                <option>32</option>
+                                <option>64</option>
+                            </select>
+
+                        </div>
+
+                    </div>
+                
                 </div>
 
-            </div>
-        </main>
+                    <div class="featured-stuff products">
+                        <div class="t-short product">
+                            <div class="t-shortImg">
+                                <div class="invisibleBlock invisBlockProducts"><button><img class="addtoCartButton" src="img/whiteCart.png" alt="whitecart"> Add To Cart</button> <button><img class="return" src="img/return.png" alt="return"></button><button><img class="like" src="img/heart.png" alt="like"></button></div>
+                                <img class="featuredProduct" src="img/Layer_2.jpg" alt="first">
+                            </div>
+                            <h6 class="mango">Mango People T-shirt</h6><div class="invisiblestars"><h6 class="price">$52.00</h6><img src="img/stars.png" alt="stars"></div>   
+                        </div>
+                        <div class="t-short">
+                            <div class="t-shortImg">
+                                <div class="invisibleBlock"><button><img src="img/whiteCart.png" alt="whitecart"> Add To Cart</button></div>
+                                <img class="featuredProduct" src="img/Layer_3.jpg" alt="clothes2">
+                            </div>
+                            <h6 class="mango">Mango People T-shirt</h6><div class="invisiblestars"><h6 class="price">$52.00</h6><img src="img/stars.png" alt="stars"></div>   
+                        </div> 
+                        <div class="t-short">
+                            <div class="t-shortImg">
+                                <div class="invisibleBlock"><button><img src="img/whiteCart.png" alt="whitecart"> Add To Cart</button></div>
+                                <img class="featuredProduct" src="img/Layer_4.jpg" alt="clothes3">
+                            </div>
+                            <h6 class="mango">Mango People T-shirt</h6><div class="invisiblestars"><h6 class="price">$52.00</h6><img src="img/stars.png" alt="stars"></div>   
+                        </div> 
+                        <div class="t-short">
+                            <div class="t-shortImg">
+                                <div class="invisibleBlock"><button><img src="img/whiteCart.png" alt="whitecart"> Add To Cart</button></div>
+                                <img class="featuredProduct" src="img/Layer_5.jpg" alt="clothes4">
+                            </div>
+                            <h6 class="mango">Mango People T-shirt</h6><div class="invisiblestars"><h6 class="price">$52.00</h6><img src="img/stars.png" alt="stars"></div> 
+                        </div> 
+                        <div class="t-short">
+                            <div class="t-shortImg">
+                                <div class="invisibleBlock"><button><img src="img/whiteCart.png" alt="whitecart"> Add To Cart</button></div>
+                                <img class="featuredProduct" src="img/Layer_6.jpg" alt="clothes5">
+                            </div>
+                            <h6 class="mango">Mango People T-shirt</h6><div class="invisiblestars"><h6 class="price">$52.00</h6><img src="img/stars.png" alt="stars"></div>  
+                        </div> 
+                        <div class="t-short">
+                            <div class="t-shortImg">
+                                <div class="invisibleBlock"><button><img src="img/whiteCart.png" alt="whitecart"> Add To Cart</button></div>
+                                <img class="featuredProduct" src="img/Layer_7.jpg" alt="clothes6">
+                            </div>
+                            <h6 class="mango">Mango People T-shirt</h6><div class="invisiblestars"><h6 class="price">$52.00</h6><img src="img/stars.png" alt="stars"></div>   
+                        </div> 
+                        <div class="t-short">
+                            <div class="t-shortImg">
+                                <div class="invisibleBlock"><button><img src="img/whiteCart.png" alt="whitecart"> Add To Cart</button></div>
+                                <img class="featuredProduct" src="img/Layer_8.jpg" alt="clothes7">
+                            </div>
+                            <h6 class="mango">Mango People T-shirt</h6><div class="invisiblestars"><h6 class="price">$52.00</h6><img src="img/stars.png" alt="stars"></div>   
+                        </div> 
+                        <div class="t-short">
+                            <div class="t-shortImg">
+                                <div class="invisibleBlock"><button><img src="img/whiteCart.png" alt="whitecart"> Add To Cart</button></div>
+                                <img class="featuredProduct" src="img/Layer_9.jpg" alt="clothes8">
+                            </div>
+                            <h6 class="mango">Mango People T-shirt</h6><div class="invisiblestars"><h6 class="price">$52.00</h6><img src="img/stars.png" alt="stars"></div>   
+                        </div> 
+                        <div class="t-short">
+                            <div class="t-shortImg">
+                                <div class="invisibleBlock"><button><img src="img/whiteCart.png" alt="whitecart"> Add To Cart</button></div>
+                                <img class="featuredProduct" src="img/Layer_48.png" alt="clothes6">
+                            </div>
+                            <h6 class="mango">Mango People T-shirt</h6><div class="invisiblestars"><h6 class="price">$52.00</h6><img src="img/stars.png" alt="stars"></div>   
+                        </div> 
+                        <div class="t-short">
+                            <div class="t-shortImg">
+                                <div class="invisibleBlock"><button><img src="img/whiteCart.png" alt="whitecart"> Add To Cart</button></div>
+                                <img class="featuredProduct" src="img/Layer_49.png" alt="clothes7">
+                            </div>
+                            <h6 class="mango">Mango People T-shirt</h6><div class="invisiblestars"><h6 class="price">$52.00</h6><img src="img/stars.png" alt="stars"></div>   
+                        </div> 
+                        <div class="t-short">
+                            <div class="t-shortImg">
+                                <div class="invisibleBlock"><button><img src="img/whiteCart.png" alt="whitecart"> Add To Cart</button></div>
+                                <img class="featuredProduct" src="img/Layer_43.png" alt="clothes8">
+                            </div>
+                            <h6 class="mango">Mango People T-shirt</h6><div class="invisiblestars"><h6 class="price">$52.00</h6><img src="img/stars.png" alt="stars"></div>   
+                        </div> 
+                        <div class="t-short">
+                            <div class="t-shortImg">
+                                <div class="invisibleBlock"><button><img src="img/whiteCart.png" alt="whitecart"> Add To Cart</button></div>
+                                <img class="featuredProduct" src="img/Layer_4.jpg" alt="clothes8">
+                            </div>
+                            <h6 class="mango">Mango People T-shirt</h6><div class="invisiblestars"><h6 class="price">$52.00</h6><img src="img/stars.png" alt="stars"></div>   
+                        </div>      
+                    </div>
+
+                    <div class="pagination">
+                        <img src="img/leftgreyarrow.png" alt="arrow"> <span>1</span> 2 3 4 5 6.....20 <img src="img/rightpinkarrow.png" alt="arrow">
+                    </div>
+                    <div class="viewAll">
+                        <button>View All</button>
+                    </div>
+
+                    
+
+                </article>
+            </main>    
         <section class="subscribe">
             <div class="photo-area">
                 <div class="photo-area-text"><em>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, 

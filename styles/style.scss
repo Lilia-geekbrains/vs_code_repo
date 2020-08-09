@@ -663,6 +663,7 @@ a .logo {
 }
 
 .subscribe {
+    clear: both;
     height: 438px;
     background-image: url(../img/Rectangle_9_copy.png), url(../img/Layer_41.jpg);
     display: flex;
@@ -1788,13 +1789,14 @@ a .logo {
             height: 33px;
             border: 1px solid #eaeaea;
             background-color: #ffffff;
-            color: #bcbcbc;
+            color: #222224;
             font-family: Lato;
             font-size: 14px;
             font-weight: 400;
             line-height: 24px;
             padding-left: 17px;
             margin-top: 16px;
+            outline: none;
              }
         }
         button {
@@ -1812,6 +1814,7 @@ a .logo {
             align-items: center;
             justify-content: center;
             transition-duration: .3s;
+            outline: none;
             &:hover {
                 box-shadow: 1px 1px 2px 1px #ef5b70;
             }
@@ -1918,4 +1921,108 @@ a .logo {
 
         }
     }
+}
+
+.leftNav {
+    float: left;
+    width: 243px;
+    display: flex;
+    flex-direction: column;
+    input {
+        display: none;
+       
+
+    }
+    label {
+        
+        width: 228px;
+        cursor: pointer;
+        background: url(../img/arrowbottom.png) no-repeat 98% 50%;
+        color: #6f6e6e;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 37px;
+        border-left: 5px solid #f16d7f;
+        border-bottom: 1px solid #ebebeb;
+        padding-left: 10px;
+        transition-duration: .3s;
+        margin-top: 18px;
+        &:hover {
+            color: #f16d7f;
+        }
+    }
+
+    input:checked + label {
+        color: #ef5b70;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 37px;
+        text-transform: uppercase;
+        background: url(../img/pink_caret.png) no-repeat 98% 50%;
+    }
+    
+    ul {
+        margin: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition-duration: .5s;
+        list-style-type: none;
+        color: #6f6e6e;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 33px;
+        li a {
+            text-decoration: none;
+            color: #6f6e6e;
+            transition-duration: .3s;
+            &:hover {
+                color: #f16d7f;
+            }
+        }
+     }
+    input:checked +label + ul {
+        max-height: 500px;
+    }
+}
+
+.productsMain {
+   float: right;
+   width: 848px;
+}
+
+.settings {
+    display: flex;
+    justify-content: space-between;
+    .style {
+        width: 177px;
+        h1 {
+            color: #6f6e6e;
+            font-family: Lato;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 20px;
+            text-transform: uppercase;
+        }
+        button {
+            color: #6f6e6e;
+            font-family: Lato;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 26px;
+            background-color: #fff;
+            border-color: #fbfbfb;
+            border-bottom: #fbfbfb;
+            outline: none;
+            &:nth-child(3n+1) {
+                border-right: none;
+        }
+        
+
+        }
+    }
+
 }
